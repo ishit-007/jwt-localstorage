@@ -1,0 +1,21 @@
+.header{
+    background-color: rgb(156, 35, 255);
+    color: white;
+    height: 10vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+.header h1{
+    text-align: center;
+}
+.header li{
+    padding: 5px;
+}
+.header ul{
+    display: flex;
+    justify-content: space-around;
+    list-style: none;
+    font-weight: 700;
+    font-size: x-large;
+}

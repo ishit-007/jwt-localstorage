@@ -1,0 +1,25 @@
+.loginContainer{
+    margin-left: 40vw;
+    margin-top: 30vh;
+    border: 1px solid black;
+    width: fit-content;
+    display: flex;
+    flex-direction: column;
+    padding: 20px;
+    align-items: center;
+    justify-content: center;
+}
+.loginContainer form{
+    justify-content: center;
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+}
+.loginContainer form button{
+    margin-top: 20px;
+    height: 30px;
+}
+.loginContainer input{
+    height: 30px;
+    width: 250px;
+}
