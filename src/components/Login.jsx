@@ -5,7 +5,7 @@ import Cookies from "js-cookie";
 import "./Login.css";
 
 const Login = () => {
-  const [userName, serUserName] = React.useState("");
+  const [userName, setUserName] = React.useState("");
   const [password, setPassword] = React.useState("");
 
   const handleSubmit = (e) => {
@@ -18,6 +18,7 @@ const Login = () => {
       .post("http://localhost:3000/login", data)
       .then((res) => {
         const token = res.data;
+        console.log(token);
         localStorage.setItem("token", token);
       })
       .catch((err) => {
@@ -35,7 +36,7 @@ const Login = () => {
           name="username"
           id="username"
           onChange={(e) => {
-            serUserName(e.target.value);
+            setUserName(e.target.value);
           }}
         />
 

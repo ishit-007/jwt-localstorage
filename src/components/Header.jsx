@@ -16,6 +16,10 @@ const Header = () => {
             navigate("/about");
           }}>About</li>
           <li onClick={()=>{
+            navigate('/fromBackend')
+          }}>From BE</li>
+          <li onClick={()=>{
+            localStorage.removeItem("token");
             navigate("/logout");
           }}>Logout</li>
         </ul>

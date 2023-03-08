@@ -1,13 +1,13 @@
 import React from "react";
 import "./Hello.css";
-import WithAuth from "./WithAuth";
+// import axios from "axios";
 
 const Hello = () => {
   return (
-    <h1 className="hello">
-      Hello
-    </h1>
+    <div>
+      <h1>Hello</h1>
+    </div>
   );
 };
 
-export default WithAuth(Hello);
+export default Hello;
